@@ -59,10 +59,10 @@ int _print_spec(char format, va_list args)
 {
 	int i  = 0, length = 0;
 	spc_dt _types[] = {
-		{"c", _print_a_char},
-		{"s", _print_a_string},
-		{"d", _print_a_integer},
-		{"i", _print_a_integer},
+		{"c", _print_char},
+		{"s", _print_string},
+		{"d", _print_integer},
+		{"i", _print_integer},
 		{"b", _print_int_binary},
 		{NULL, NULL}
 	};

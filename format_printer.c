@@ -15,25 +15,35 @@ int _print_format(const char *format, va_list args)
 
 	while (format && format[i])
 	{
+		/* It will go through each character in the string until it finds the % for the variable */
+		/* if it isnt a % char, else will activate printing the current character we are at */
 		if (format[i] == '%')
 		{
+			/* It will check to see if after the % theres \0 to know if theres a variable letter to use if not; error */
 			if (format[i + 1] == '\0')
 				return (-1);
 
 			i++;
 
+			/* it will continue checking spaces until finding a letter */
 			while (format[i] == ' ')
 				i++;
 
+			/* if it finds a second % before a letter it will increase the count */
 			if (format[i] == '%')
 				count += _putchar(format[i]);
 
+			/* it will call the function that checks to see if the letter is a variable we can use */
+			/* if we cant use it, we run print_ivalid_spec */
 			if (_validate_char(format[i]) == 0)
 			{
+				/* it will add to the count, the previous char and the current char */
 				count = _print_invalid_spec(format[i - 1], format[i], count);
 			}
 			else
 			{
+				/* this function will run the funtion that corresponds to the variable we */
+				/* found through the validate_char ran in the current if statement */
 				count += _print_spec(format[i], args);
 			}
 		}
@@ -45,6 +55,7 @@ int _print_format(const char *format, va_list args)
 		i++;
 	}
 
+	/* Returns the lenght to the function printf */
 	return (count);
 }
 

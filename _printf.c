@@ -12,7 +12,14 @@
 
 int _printf(const char *format, ...)
 {
-	va_list(args);
+  /* Function pointer array for format functions */
+	static format_func_ptr format_functions[] = {
+		['c'] = print_char,
+		['s'] = print_string,
+		['%'] = print_percent
+		/* Initialize other elements with NULL if needed */
+	};
+	va_list args;
 	int i, len = 0;
 
 	va_start(args, format);
@@ -21,12 +28,6 @@ int _printf(const char *format, ...)
   {
 		if (format[i] == '%')
 		{
-			static format_func_ptr format_functions[128] = {
-				{'c', print_char},
-				{'s', print_string},
-				{'%', print_percent},
-			};
-
       format_func_ptr func_ptr;
 			i++;
 

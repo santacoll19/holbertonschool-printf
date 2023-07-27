@@ -34,7 +34,7 @@ int _print_format(const char *format, va_list args)
 				count += _putchar(format[i]);
 
 			/* it will call the function that checks to see if the letter is a variable we can use */
-			/* if we cant use it, we run print_ivalid_spec */
+			/* if we cant use it, we run print_invalid_spec */
 			if (_validate_char(format[i]) == 0)
 			{
 				/* it will add to the count, the previous char and the current char */

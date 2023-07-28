@@ -1,0 +1,16 @@
+.\" Manpage for _printf.
+.TH man 3 "27 julio 2023" "1.0" "_printf man page"
+.SH NAME
+_printf \- it prints any text as long as the type of variable it is is provided. 
+.SH SYNOPSIS
+_printf ("ADITIONATEXT [\%TYPEOFTEXT]", TEXT)
+.SH DESCRIPTION
+_printf is a replica of the normal printf and can also be considered SUPERIOR to the original.
+.SH OPTIONS
+The nuseradd does not take any options. However, you can supply username.
+.SH SEE ALSO
+useradd(8), passwd(5), nuseradd.debian(8) 
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Giovanni, Sweety, Kelvin (LOS DUROS).

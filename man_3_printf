@@ -7,9 +7,13 @@ _printf ("ADITIONATEXT [\%TYPEOFTEXT]", TEXT)
 .SH DESCRIPTION
 _printf is a replica of the normal printf and can also be considered SUPERIOR to the original.
 .SH OPTIONS
-The nuseradd does not take any options. However, you can supply username.
+ %c: it tells the functions the provided type of variable is an character.
+ %s: it tells the functions the provided type of variable is an string.
+ %d: it tells the functions the provided type of variable is an integer.
+ %i: it tells the functions the provided type of variable is an integer.
+ %b: it tells the functions the provided type of variable is an integer you want printed in binary.
 .SH SEE ALSO
-useradd(8), passwd(5), nuseradd.debian(8) 
+NOTHING TO SEE HERE
 .SH BUGS
 No known bugs.
 .SH AUTHOR

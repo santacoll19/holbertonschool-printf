@@ -23,32 +23,32 @@ And validate character will confirm that the type of variable that the funtion d
 Will provide the arguments/strings of characters received to the other functions and return the lenght of the string provided.
 
 # Example-Run
-Gi@Gi-Holberton:~/github/holbertonschool-printf-1$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
-Gi@Gi-Holberton:~/github/holbertonschool-printf-1$ ./a.out
-Let's try to printf a simple sentence.
-Let's try to printf a simple sentence.
-Length:[39, 39]
-Length:[39, 39]
-Negative:[-762534]
-Negative:[-762534]
-Unsigned:[%u]
-Unsigned:[2147484671]
-Unsigned octal:[%o]
-Unsigned octal:[20000001777]
-Unsigned hexadecimal:[%x, %X]
-Unsigned hexadecimal:[800003ff, 800003FF]
-Character:[H]
-Character:[H]
-String:[I am a string !]
-String:[I am a string !]
-Address:[%p]
-Address:[0x7ffe637541f0]
-Percent:[%]
-Percent:[%]
-Len:[12]
-Len:[12]
-Unknown:[%r]
-Unknown:[%r]
+Gi@Gi-Holberton:~/github/holbertonschool-printf-1$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c\n
+Gi@Gi-Holberton:~/github/holbertonschool-printf-1$ ./a.out\n
+Let's try to printf a simple sentence.\n
+Let's try to printf a simple sentence.\n
+Length:[39, 39]\n
+Length:[39, 39]\n
+Negative:[-762534]\n
+Negative:[-762534]\n
+Unsigned:[%u]\n
+Unsigned:[2147484671]\n
+Unsigned octal:[%o]\n
+Unsigned octal:[20000001777]\n
+Unsigned hexadecimal:[%x, %X]\n
+Unsigned hexadecimal:[800003ff, 800003FF]\n
+Character:[H]\n
+Character:[H]\n
+String:[I am a string !]\n
+String:[I am a string !]\n
+Address:[%p]\n
+Address:[0x7ffe637541f0]\n
+Percent:[%]\n
+Percent:[%]\n
+Len:[12]\n
+Len:[12]\n
+Unknown:[%r]\n
+Unknown:[%r]\n
 
 # Members:
 Sweety Castro

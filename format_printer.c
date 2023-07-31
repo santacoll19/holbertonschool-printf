@@ -115,8 +115,6 @@ int _validate_char(char _type)
 	char _types[] = {'c', 's', 'd', 'i', 'b', '%'};
 	int i = 0;
 
-	/* checks each char in the _types array and compares it to the _type variable to */
-	/* determine if the variable we've been provided is a variable type we can use */
 	while (_types[i])
 	{
 		if (_types[i] == _type)
